@@ -122,6 +122,7 @@ nav .logo {
   border-radius: 50%;
   background-color: orchid;
   margin: auto;
+  background-image: conic-gradient(orange 120deg,rgb(3, 194, 3) 120deg 240deg,black 240deg );
 }
 
 .dots-wrapper {
@@ -245,17 +246,26 @@ nav .logo {
 
 .side-bar-icons {
   padding-top: 1rem;
-}
+  display: flex;
+  flex-direction: column;
+  list-style: none;
 
-.side-bar-icons>div {
+}
+button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.side-bar-icons>li {
   padding: .5rem;
   text-align: center;
-  width: 50%;
+  /* width: 50%; */
   margin:.5rem auto;
   border-radius: 5px;
 
 }
-.side-bar-icons>div.active{
+.side-bar-icons>li.active{
   background-color: rgb(4, 184, 255);
 }
 .bell{
